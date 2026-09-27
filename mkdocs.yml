@@ -1,0 +1,70 @@
+site_name: Hostto
+site_description: Manual do painel de aluguéis.
+site_url: https://wmreis-labs.github.io/hostto-docs/
+repo_url: https://github.com/wmreis-labs/hostto-docs
+repo_name: wmreis-labs/hostto-docs
+docs_dir: docs
+copyright: Documentação pública da organização wmreis-labs
+
+theme:
+  name: material
+  language: pt
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Tema escuro
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Tema claro
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - toc.follow
+
+plugins:
+  - search:
+      lang:
+        - pt
+        - en
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+  - Início: index.md
+  - Setup: setup.md
+  - Mudanças: mudancas/index.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/wmreis-labs/hostto-docs
