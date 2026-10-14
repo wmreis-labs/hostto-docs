@@ -8,4 +8,4 @@ Nenhum ADR exclusivo desta interface ainda.
 
 ## Design doc
 
-Nenhum design doc exclusivo desta interface ainda.
+O calendário de ocupação está em [Calendário](design/2026-10-14-calendario-ocupacao.md). O problema de produto está no [PRD](https://wmreis-labs.github.io/wmreis-docs/mudancas/prd/2026-10-14-calendario-ocupacao/).

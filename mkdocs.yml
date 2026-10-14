@@ -62,7 +62,11 @@ markdown_extensions:
 nav:
   - Início: index.md
   - Setup: setup.md
-  - Mudanças: mudancas/index.md
+  - Mudanças:
+      - mudancas/index.md
+      - Design docs:
+          - mudancas/design/index.md
+          - Calendário: mudancas/design/2026-10-14-calendario-ocupacao.md
 
 extra:
   social:
