@@ -66,6 +66,7 @@ nav:
       - mudancas/index.md
       - Design docs:
           - mudancas/design/index.md
+          - Dashboard bancário: mudancas/design/2026-10-17-dashboard-bancario.md
           - Calendário: mudancas/design/2026-10-14-calendario-ocupacao.md
 
 extra:

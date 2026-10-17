@@ -8,4 +8,4 @@ Nenhum ADR exclusivo desta interface ainda.
 
 ## Design doc
 
-O calendário de ocupação está em [Calendário](design/2026-10-14-calendario-ocupacao.md). O problema de produto está no [PRD](https://wmreis-labs.github.io/wmreis-docs/mudancas/prd/2026-10-14-calendario-ocupacao/).
+O dashboard bancário está em [Dashboard bancário](design/2026-10-17-dashboard-bancario.md). O calendário de ocupação está em [Calendário](design/2026-10-14-calendario-ocupacao.md). O problema de produto de cada um está no [PRD do dashboard](https://wmreis-labs.github.io/wmreis-docs/mudancas/prd/2026-10-17-dashboard-bancario/) e no [PRD do calendário](https://wmreis-labs.github.io/wmreis-docs/mudancas/prd/2026-10-14-calendario-ocupacao/).
