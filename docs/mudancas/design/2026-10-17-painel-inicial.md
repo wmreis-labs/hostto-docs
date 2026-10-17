@@ -1,6 +1,6 @@
 # Design: painel inicial
 
-**Status:** aberta
+**Status:** aceita
 **Data:** 2026-10-17
 
 O problema de produto está no [PRD](https://wmreis-labs.github.io/wmreis-docs/mudancas/prd/2026-10-17-painel-inicial/).
