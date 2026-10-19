@@ -69,6 +69,7 @@ nav:
           - Painel inicial: mudancas/design/2026-10-17-painel-inicial.md
           - Dashboard bancário: mudancas/design/2026-10-17-dashboard-bancario.md
           - Calendário: mudancas/design/2026-10-14-calendario-ocupacao.md
+          - Shell e cache: mudancas/design/2026-10-18-shell-spa-e-cache.md
 
 extra:
   social:
