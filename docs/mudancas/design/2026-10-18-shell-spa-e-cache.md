@@ -37,7 +37,7 @@ Medido no código de `hostto` em 2026-10-18.
 
 ### 1. Rota declara o layout; a página só renderiza conteúdo
 
-Cada rota privada ganha `handle` com a configuração do shell (título, menu secundário, ações). O `PrivateLayout` lê `useMatches()` e passa ao shell. A página deixa de renderizar `BaseLayoutLogged`. Para ações que dependem de estado da tela (botão que usa dado carregado), a página usa `useLayoutConfig` com valor memoizado, que passa a ser o único caminho.
+Cada rota privada tem a configuração do shell (título, menu secundário, sidebar) numa tabela em `src/layouts/routeLayouts.ts`. O `PrivateLayout` resolve a tabela pelo `pathname` e passa ao shell. (Desvio da proposta original: o app usa `BrowserRouter`, que não oferece `handle` nem `useMatches`.) Ações dinâmicas entram pelo componente `PageLayout`. A página deixa de renderizar `BaseLayoutLogged`. Para ações que dependem de estado da tela (botão que usa dado carregado), a página usa `useLayoutConfig` com valor memoizado, que passa a ser o único caminho.
 
 Resultado: o shell não é limpo entre rotas e renderiza uma vez por troca. `asShell` e o ramo `layoutActions && !asShell` saem de `BaseLayoutLogged`.
 
@@ -83,7 +83,7 @@ Ordem: `FlippingDetailPage`, `BudgetEditorPage`, `PropertyDetailPage`, `Calendar
 | Etapa | Entrega | Risco |
 | --- | --- | --- |
 | 1 | `Suspense` dentro do shell e `QueryClient` com `staleTime` | Baixo |
-| 2 | Rotas com `handle` e remoção do `BaseLayoutLogged` das páginas, domínio por domínio, começando por dashboard e persons | Médio: 30 páginas e testes de layout |
+| 2 | Tabela de rotas e remoção do `BaseLayoutLogged` das páginas, domínio por domínio, começando por dashboard e persons | Médio: 30 páginas e testes de layout |
 | 3 | Migrar leituras para React Query: properties, persons, contracts, flipping, calendário, financeiro | Médio: chaves e invalidação |
 | 4 | `useListParams` nas listas | Baixo |
 | 5 | `PageState` e guarda via Redux | Baixo |
